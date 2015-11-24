@@ -1,0 +1,22 @@
+{
+  "name": "rockit-express",
+  "description": "",
+  "main": "server.js",
+  "authors": [
+    "Kevin Lanni <therealklanni@gmail.com> (https://github.com/therealklanni)"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "fontawesome#~4.4.0"
+   
+  }
+}

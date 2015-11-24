@@ -1,0 +1,33 @@
+.dashboard-container {
+	background-color: blue;
+}
+
+.dashboard-container > div {
+	height: 200px;
+	background-color: brown;
+	// border: 1px solid black;
+	margin: 1px;
+	text-align: center;
+	padding: 10px;
+	
+
+	// display: flex;
+	// flex-wrap: wrap;
+}
+
+@media screen and (min-width: 600px) {
+	.dashboard-container > div {
+		display: flex;
+		flex-direction: column;
+
+		> div {
+			display: flex;
+		}
+
+		.tile {
+			flex: 1;
+		}
+		
+
+	}
+}

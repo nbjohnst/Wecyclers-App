@@ -1,0 +1,94 @@
+div.hero {
+	height: 620px;
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	// background-image: radial-gradient(rgba(0, 142, 172, 0.0), rgba(0, 142) url('wecyclers-tricycle.jpg') center no-repeat; 
+	// background-size: cover;
+    // background-image: url('../images/wecyclers-tricycle.jpg');
+   background: radial-gradient(rgba(78, 0, 121, 0.5), rgba(78, 0, 121, 0.9)), 
+   url("../images/plastic-bottles-4.JPG") no-repeat;
+}
+
+// .slide {
+// 	display: none;
+// 	// transform: translateX(-21em);
+// }
+
+.agent-login {
+	position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: yellow;
+    width: 330px;
+    height: 100%;
+    display: flex;
+    align-items: center; 
+}
+
+.agent-form {
+	width: 260px;
+	margin-left: 20px
+	// margin-left: 25px;
+	// transform: translateY(125px);
+}
+
+.login-inputs, .login-submit {
+	margin-top: 10px;
+}
+
+.login-inputs input{
+	width: 100%;
+}
+
+.agent-form .agent_sign_in {
+	margin-top: 7px;
+
+}
+
+
+// .agent-login {
+// 	position: relative;
+//     top: 0px;
+//     left: 0px;
+//     background-color: yellow;
+//     width: 330px;
+//     height: 400px;
+// }
+
+div.hero div {
+	
+}
+
+nav {
+	height: 31px;
+	background-color: white;
+	position: absolute;
+	margin-top: 30px;
+	right: 0px;
+	left: 0px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 26px;
+}
+
+
+nav.media_nav img {
+	margin-right: 25px;
+	height: 29px;
+}
+
+// @keyframes stretch {
+//   .agent-login {
+//   animation-name: stretch;
+//   animation-duration: 1.5s; 
+//   animation-timing-function: ease-out; 
+//   animation-delay: 0;
+//   animation-direction: alternate;
+//   animation-iteration-count: infinite;
+//   animation-fill-mode: none;
+//   animation-play-state: running; 
+// }
+
+// }
