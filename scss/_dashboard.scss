@@ -1,33 +1,193 @@
-.dashboard-container {
+body {
+	margin: 0 auto;
+}
+
+.dashboard-hero {
 	background-color: blue;
-}
-
-.dashboard-container > div {
-	height: 200px;
-	background-color: brown;
-	// border: 1px solid black;
-	margin: 1px;
-	text-align: center;
-	padding: 10px;
+	margin: 0 auto;
+	// position: relative;
 	
-
-	// display: flex;
-	// flex-wrap: wrap;
 }
 
-@media screen and (min-width: 600px) {
-	.dashboard-container > div {
-		display: flex;
-		flex-direction: column;
+.card_container {
+	background-color: yellow;
+	/*height: 100px;*/
+	width: 100%;
+	margin: 0 auto;
+	height: 100%;  
+}
 
-		> div {
-			display: flex;
-		}
+.hidden_container-form {
+	background-color: red;
+	/*height: 600px;*/
+	width: 260px;
+	margin: 0 auto;
+	// display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	// position: absolute;
+ //  	top: 50%;
+ //  	height: 100px;
+ //  	margin-top: -50px; 
+  	// transform: translateY(80px);
+}
+.hidden_container {
+	background-color: red;
+	/*height: 600px;*/
+	width: 260px;
+	margin: 0 auto;
+	// display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	// position: absolute;
+ //  	top: 50%;
+ //  	height: 100px;
+ //  	margin-top: -50px; 
+  	// transform: translateY(80px);
+}
 
-		.tile {
-			flex: 1;
-		}
-		
+.card {
+	background-color: magenta;
+	border: 1px black solid;
+	flex:1;
+	text-align: center;
+}
 
+.new_user {
+	background-color: red;
+	// border: 1px black solid;
+	flex:1;
+	text-align: center;
+	margin-top: 40px;
+}
+
+.media_container {
+	display: flex;
+	background-color: grey;
+	height: 100px;
+}	
+
+.dashboard-form-container {
+	display: flex;
+	background-color: grey;
+	height: 100px;
+}	
+
+.personal_info {
+	flex: 1;
+	background-color: green;
+	margin: 2px;
+	text-align: center;
+	padding: 7px;
+}
+
+.personal_numbers {
+	flex: 1;
+	background-color: teal;
+	margin: 2px;
+	text-align: center;
+	padding: 7px;
+}
+
+.personal_numbers-input {
+	flex: 1;
+	background-color: teal;
+	margin: 2px;
+	text-align: center;
+	padding: 7px;
+}
+
+.customer_info {
+	flex: 1;
+	background-color: green;
+	margin: 2px;
+	margin-left: 2px;
+	padding: 7px;
+}
+.selectSendInputParent {
+	display: flex;
+}
+
+.clentSelectContainer {
+	flex:1;
+}
+
+.clientSubmitContainer {
+	flex:1;
+}
+
+.customer_info div {
+
+	margin-left: -6px;
+	
+}
+
+.customer_first_donation {
+	flex: 1;
+	background-color: teal;
+	margin: 2px;
+	margin-left: 2px;
+	padding: 7px;
+}
+
+.customer_first_donation div {
+	margin-left: -6px;
+}
+
+.dashboard_nav {
+	margin-top: 0px;
+}
+
+// .dashboard-fake-lightbox {
+// 	height: 400px;
+// 	width: 400px;
+// 	background-color: red;
+// 	transform: translateY(-500px);
+// 	margin; 0 auto;
+// 	display: inline-block;
+
+// }
+
+nav.dashboard_nav {
+	height: 31px;
+	background-color: white;
+	// position: absolute;
+	margin-top: 30px;
+	right: 0px;
+	left: 0px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 26px;
+}
+
+@media screen and (min-width: 700px) {
+	.card_container {
+		width: 70%;
 	}
+	.hidden_container {
+		background-color: red;
+		/*height: 100px;*/
+		width: 65%;
+		margin: 0 auto;
+		flex-wrap: wrap;
+	}
+	.card {
+		width: 180px;
+		flex:50;
+		display: inline-block;
+	}
+	
+	.customer_info,
+	.customer_first_donation {
+	    text-align: center;
+	}
+
+	.customer_first_donation div, 
+	.customer_info div  {
+	
+		margin-left: 0px;
+	
+	}
+
 }

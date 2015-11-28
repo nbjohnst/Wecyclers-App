@@ -4,22 +4,27 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
-	<!-- <link rel="stylesheet" href="index.css"> -->
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.css">
-	<script src="index.js"></script>
+	<!--<script src=""></script>-->
+	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+	<script src="../scripts/index.js"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js'></script>
+	<!-- <script src="../node_modules/handlebars/dist/handlebars.min.js"></script> -->
 </head>
 <body>
 	<div class='hero'>
 		<div>
 			<nav class='media_nav'>
-				<span class='agent_sign_in'>  <a href="dashboard.html">Dashboard</a>|  <i class="fa fa-sign-in"></i>Agent Portal  |</span>
+			
+
+				<button class='landing-sign-in'><i class="fa fa-sign-in"></i> Sign In</button>
 			<!-- 	<button>Sign In </button> -->
 				<!-- <img src="http://ur4africa.com/wp-content/uploads/2015/05/Wecyclers-logo-172w.jpg" alt=""> -->
 				<img src="../images/wecyclers-logo.png">
 			</nav> 
 		</div>
-		<div class=".agent_sign_in slide">
+		<div class="agent-sign-in disappear">
 			<div class="agent-form">
 				<form action="">
 					<div><h3>Agent Portal Login</h3></div>
@@ -37,7 +42,11 @@
 	  				</div>
 	  				<div class='login-submit'>
 	  					<input type="submit" value="Submit">
+	  					<a href="http://0.0.0.0:3000/dashboard.html" class="button">Agent Portal</a>
 	  				</div>
+	  				<form action="http://0.0.0.0:3000/dashboard.html">
+    					<button class="agent-portal-button"><i class="fa fa-sign-in"></i> Login </button>
+					</form>
 				</form>
 			</div>
 		</div>
@@ -45,87 +54,82 @@
 	<div class='tile-container'>
 		<div>
 			<div class="tile">
-				<i class="fa fa-bicycle"></i>
-				<p><b>Materials Sourcing</b></p>
-				<p>Wecyclers offers convenient household recycling service in densely populated low-income 
-				neighbourhoods using a fleet of low-cost cargo bikes and an SMS-based incentives platform.</p>
+				<div class="tile-heading-container">
+					<div class="tile-icon"><i class="fa fa-bicycle fa-4x"></i></div>
+					<div class="tile-heading"><p><b>Materials Sourcing</b></p></div>
+				</div>
+				<p>Wecyclers offers a household recycling service using a fleet of low-cost cargo bikes and 
+				an SMS-based incentives platform.</p>
 			</div>
 			<div class="tile">
-				<i class="fa fa-home"></i>
+				<i class="fa fa-home fa-4x"></i> 
 				<p><b>Household Involvement</b></p>
-				<p>Households are encouraged to recycle plastic bottles and aluminium cans. 
-				For every kilogram of material that families recycle with us, they receive redeemable Wecyclers 
-				points over their mobile phones in return.</p>
+				<p> For every kilogram of material recycled with us, families receive redeemable 
+				Wecyclers points over their mobile phones in return.</p>
 			</div>
 		</div>
 		<div>
 			<div class="tile">
-				<i class="fa fa-usd"></i>
+				<i class="fa fa-usd fa-4x"></i>
 				<p><b>Wecyclers Incentives</b></p>
-				<p>For every kilogram of material that families recycle with us, they receive redeemable 
-				Wecyclers points over their mobile phones in return. Families can then redeem their points for 
-				good that they value, such as electronics and household goods.</p>
+				<p> Families can then redeem their points for 
+				goods such as electronics and household goods.</p>
 			</div>
 			<div class="tile">
-				<i class="fa fa-recycle"></i>
+				<i class="fa fa-recycle fa-4x"></i>
 				<p><b>Recycling Feedstock</b></p>
-				<p>After collection, Wecyclers aggregates material to sell to local recycling processors. 
-				Wecyclers alleviates the supply constraints faced by processors by providing a consistent supply 
-				of well-sorted, high quality recyclable material.</p>
+				Wecyclers supplies well-sorted, high quality recyclable material to local 
+				recycling processors.</p>
 			</div>
 		</div>
 	</div>
 	<div class='image-banner'></div>
 	<div class='movie'>
-
-		<!-- <div class='movie-frame'> -->
-			<!-- <img src="../images/wecyclers_banner.jpg"> -->
-	  			<!-- <iframe width="400" height="250"
-					src="https://www.youtube.com/watch?v=OLUaoSCjOTA">
-				</iframe>	 -->
-	  		<!-- <source src="movie.ogg" type="video/ogg"> -->
-			
-	<!-- 	</div> -->
+		<main>
+			<img src="/images/wecyclers_banner.jpg" alt=""> 
+			<!-- = url("../images/wecyclers_banner.jpg") -->
+		</main>
+		<aside>
+			<img src="/images/MIT-Wecyclers-01.jpg" alt=""> 
+		</aside>
 	</div>
 	<div>
 		<div class='our-mission'>
 			<div>
 				<div class="tile">
-					<i class="fa fa-globe"></i>
+					<i class="fa fa-globe fa-4x"></i>
 					<p><b>Our Mission</b></p>
-					<p>As a Wecycler, you are a part of a team on a mission to increase public health and show the world 
-					by doing good to the enviornment we all win!</p>
+					<p>Our misison is to increase public health, create jobs and show the world a new way to Recycle!</p>
 				</div>
 				<div class="tile">
-					<i class="fa fa-area-chart"></i>
+					<i class="fa fa-area-chart fa-4x"></i>
 					<p><b>Our Acomplishments</b></p>
-					<p>Since August 2012, Wecyclers has registered over 3,500 households for our collection service, 
-					built 15 collection cargo bikes, created over 20 jobs and collected and sold over 126 metric tons 
-					of recyclable materials. </p>
+					<p>Wecyclers has registered over 3,500 house, built 15 collection cargo bikes, 
+					created over 20 jobs and collected over 126 metric tons of recyclables. </p>
 				</div>
 			</div>
 			<div>
 				<div class="tile">
-					<i class="fa fa-smile-o"></i>
+					<i class="fa fa-smile-o fa-4x"></i>
 					<p><b>Our Bright Future</b></p>
 					<p>We expect to grow our subscriber base to 1M over the next 5 years, collecting over 730,000 tons 
 					of waste.</p>
 				</div>
 				<div class="tile">
-					<i class="fa fa-rebel"></i>
+					<i class="fa fa-rebel fa-4x"></i>
 					<p><b>Our Growth Strategy</b></p>
-					<p>We expect to achieve this ambitious growth strategy by franchising wecycles to micro entrepreneurs 
+					<p>We expect to franchisw wecycles to micro entrepreneurs 
 					providing them with a dignified and safe source of livelihood.</p>
 				</div>
 			</div>
 		</div>
 		<div>
-			
-			
 		</div>
 	</div>
-	<footer class='page_bottom'>
-		<img src="../images/wecyclers-logo.png">
-	</footer>
+	<div class='footer-container'>
+		<footer class='page_bottom'>
+			<img src="../images/wecyclers-logo.png">
+		</footer>
+	</div>
 </body>
 </html>

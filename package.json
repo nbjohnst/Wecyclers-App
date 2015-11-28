@@ -26,10 +26,14 @@
   },
   "devDependencies": {
     "babel": "^5.8.23",
+    "browserify": "^12.0.1",
+    "del": "^2.1.0",
     "gulp": "^3.9.0",
-    "nodemon": "^1.4.1",
     "gulp-sass": "^2.1.0",
+    "gulp-util": "^3.0.7",
+    "handlebars": "^4.0.5",
+    "hbsfy": "^2.4.1",
+    "nodemon": "^1.4.1",
     "normalize": "^0.3.1"
-
   }
 }

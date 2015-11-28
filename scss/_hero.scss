@@ -6,24 +6,25 @@ div.hero {
 	// background-image: radial-gradient(rgba(0, 142, 172, 0.0), rgba(0, 142) url('wecyclers-tricycle.jpg') center no-repeat; 
 	// background-size: cover;
     // background-image: url('../images/wecyclers-tricycle.jpg');
-   background: radial-gradient(rgba(78, 0, 121, 0.5), rgba(78, 0, 121, 0.9)), 
+   // background: radial-gradient(rgba(78, 0, 121, 0.5), rgba(78, 0, 121, 0.9)),
+   // url("../images/plastic-bottles-4.JPG") no-repeat;
+   background: radial-gradient(rgba(78, 0, 121, 0.39), rgba(84, 17, 123, 0.38)), 
    url("../images/plastic-bottles-4.JPG") no-repeat;
 }
 
-// .slide {
-// 	display: none;
-// 	// transform: translateX(-21em);
-// }
-
-.agent-login {
+.agent-sign-in {
 	position: fixed;
     top: 0px;
     left: 0px;
-    background-color: yellow;
+    background-color: white;
     width: 330px;
     height: 100%;
     display: flex;
-    align-items: center; 
+    align-items: center;
+}
+
+.disappear {
+	display: none;
 }
 
 .agent-form {
@@ -37,30 +38,20 @@ div.hero {
 	margin-top: 10px;
 }
 
+.agent-portal-button{
+	margin-top: 10px;
+}
+
 .login-inputs input{
 	width: 100%;
 }
 
-.agent-form .agent_sign_in {
+.agent-form .agent-sign-in {
 	margin-top: 7px;
 
 }
 
-
-// .agent-login {
-// 	position: relative;
-//     top: 0px;
-//     left: 0px;
-//     background-color: yellow;
-//     width: 330px;
-//     height: 400px;
-// }
-
-div.hero div {
-	
-}
-
-nav {
+nav.media_nav {
 	height: 31px;
 	background-color: white;
 	position: absolute;

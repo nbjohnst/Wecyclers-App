@@ -361,13 +361,13 @@ div.hero {
   position: relative;
   margin: 0 auto;
   width: 100%;
-  background: radial-gradient(rgba(78, 0, 121, 0.39), rgba(84, 17, 123, 0.38)), url("../images/plastic-bottles-4.JPG") no-repeat; }
+  background: url("../images/plastic-bottles-4.JPG") no-repeat; }
 
 .agent-sign-in {
   position: fixed;
   top: 0px;
   left: 0px;
-  background-color: white;
+  background-color: yellow;
   width: 330px;
   height: 100%;
   display: flex;
@@ -409,17 +409,14 @@ nav.media_nav img {
   height: 29px; }
 
 .tile-container {
-  background-color: #F2F2F2; }
+  background-color: pink; }
 
 .tile {
   height: 200px;
-  background-color: white;
+  background-color: brown;
   margin: 1px;
   text-align: center;
   padding: 10px; }
-
-.our-mission {
-  background-color: #F2F2F2; }
 
 @media screen and (min-width: 600px) {
   .tile-container, .our-mission {
@@ -434,44 +431,26 @@ nav.media_nav img {
   .tile-container, .our-mission {
     flex-direction: row; }
     .tile-container > div, .our-mission > div {
-      flex: 1; }
-  .movie {
-    margin: 0-auto;
-    height: 405px;
-    display: flex; }
-  .movie main {
-    height: 300px;
-    background-color: green;
-    flex: 3;
-    border-right: solid black 25px;
-    width: 100%; }
-  .movie aside {
-    height: 300px;
-    background-color: yellow;
-    flex: 2;
-    width: 100%; } }
+      flex: 1; } }
 
 .image-banner {
-  background-color: white;
+  background-color: grey;
   height: 80px;
   border-bottom: solid black 40px;
   border-top: solid black 50px; }
 
 .movie {
+  background: radial-gradient(rgba(78, 0, 121, 0.5), rgba(78, 0, 121, 0.9)), url("../images/wecyclers_banner.jpg");
   margin: 0-auto;
-  height: 405px;
-  display: flex; }
-
-.movie main {
-  background-color: green;
-  border-right: solid black 25px; }
-
-.movie aside {
-  height: 300px;
-  background-color: yellow; }
-
-.movie aside img {
-  background: radial-gradient(rgba(78, 0, 121, 0.39), rgba(84, 17, 123, 0.38)); }
+  text-align: center;
+  height: 480px;
+  width: 100%;
+  repeat: none;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; }
 
 .body-aside-picture {
   flex-shrink: 0;
@@ -485,7 +464,7 @@ nav.media_nav img {
 
 footer.page_bottom {
   height: 100px;
-  background-color: white;
+  background-color: green;
   justify-content: center;
   display: flex;
   margin-left: 20px;
@@ -497,9 +476,7 @@ footer.page_bottom img {
   margin-left: 14px; }
 
 .footer-container {
-  background-color: white;
-  border-left: solid 3px #F2F2F2;
-  border-right: solid 3px #F2F2F2; }
+  background-color: orange; }
 
 body {
   margin: 0 auto; }
@@ -514,14 +491,6 @@ body {
   width: 100%;
   margin: 0 auto;
   height: 100%; }
-
-.hidden_container-form {
-  background-color: red;
-  /*height: 600px;*/
-  width: 260px;
-  margin: 0 auto;
-  flex-wrap: wrap;
-  flex-direction: column; }
 
 .hidden_container {
   background-color: red;
@@ -548,11 +517,6 @@ body {
   background-color: grey;
   height: 100px; }
 
-.dashboard-form-container {
-  display: flex;
-  background-color: grey;
-  height: 100px; }
-
 .personal_info {
   flex: 1;
   background-color: green;
@@ -567,28 +531,12 @@ body {
   text-align: center;
   padding: 7px; }
 
-.personal_numbers-input {
-  flex: 1;
-  background-color: teal;
-  margin: 2px;
-  text-align: center;
-  padding: 7px; }
-
 .customer_info {
   flex: 1;
   background-color: green;
   margin: 2px;
   margin-left: 2px;
   padding: 7px; }
-
-.selectSendInputParent {
-  display: flex; }
-
-.clentSelectContainer {
-  flex: 1; }
-
-.clientSubmitContainer {
-  flex: 1; }
 
 .customer_info div {
   margin-left: -6px; }

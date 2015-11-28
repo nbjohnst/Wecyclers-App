@@ -1,8 +1,10 @@
 footer.page_bottom {
 	height: 100px;
-	background-color: green;
+	background-color: white;
 	justify-content: center;
 	display: flex;
+	margin-left: 20px;
+	margin-right: 20px;
 	
 }
 
@@ -11,4 +13,10 @@ footer.page_bottom img {
 	height: 29px;
 	margin-left: 14px;
 	
+}
+
+.footer-container {
+	background-color: white;
+	border-left: solid 3px #F2F2F2;
+	border-right: solid 3px #F2F2F2;
 }
