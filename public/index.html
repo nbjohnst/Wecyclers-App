@@ -6,34 +6,32 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.css">
-	<!--<script src=""></script>-->
 	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-	<script src="../scripts/index.js"></script>
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js'></script>
-	<!-- <script src="../node_modules/handlebars/dist/handlebars.min.js"></script> -->
+	<script src="../scripts/index.js"></script>
 </head>
 <body>
 	<div class='hero'>
+	<div class="banner-slogan">
+		<span>A convenient household recycling service!</span>
+	</div>
 		<div>
 			<nav class='media_nav'>
+		
+				<div class="button-parent1">
+					<a href="http://0.0.0.0:3000/client.html" class="button">
+						<i class="fa fa-smile-o"></i> Clients </a>
+					<a href="#" class="agent-button button"><i class="fa fa-bicycle"></i> Agents</a>
+				</div>
+				
+			<img src="../images/logo2.png">
 			
-
-				<button class='landing-sign-in'><i class="fa fa-sign-in"></i> Sign In</button>
-			<!-- 	<button>Sign In </button> -->
-				<!-- <img src="http://ur4africa.com/wp-content/uploads/2015/05/Wecyclers-logo-172w.jpg" alt=""> -->
-				<img src="../images/wecyclers-logo.png">
 			</nav> 
 		</div>
 		<div class="agent-sign-in disappear">
 			<div class="agent-form">
 				<form action="">
 					<div><h3>Agent Portal Login</h3></div>
-						<!-- <div>Welcome to the Wecyclers agent 
-						portal! By loggin in you will have 
-						acess to your clients' information 
-						and what you need to get started in 
-						this great career! 
-						</div> -->
 					<div class='login-inputs'>
 						<input  placeholder="Username" type="text" name="username">
 					</div>
@@ -41,30 +39,24 @@
 	  					<input placeholder="Password" type="text" name="password"><br>
 	  				</div>
 	  				<div class='login-submit'>
-	  					<input type="submit" value="Submit">
-	  					<a href="http://0.0.0.0:3000/dashboard.html" class="button">Agent Portal</a>
+	  					<a href="http://0.0.0.0:3000/dashboard.html" class="hiddenFormSubmit button"> <i class="fa fa-sign-in"></i> Submit</a>
 	  				</div>
-	  				<form action="http://0.0.0.0:3000/dashboard.html">
-    					<button class="agent-portal-button"><i class="fa fa-sign-in"></i> Login </button>
-					</form>
-				</form>
+	  			</form>
 			</div>
 		</div>
 	</div>
 	<div class='tile-container'>
 		<div>
 			<div class="tile">
-				<div class="tile-heading-container">
-					<div class="tile-icon"><i class="fa fa-bicycle fa-4x"></i></div>
-					<div class="tile-heading"><p><b>Materials Sourcing</b></p></div>
-				</div>
-				<p>Wecyclers offers a household recycling service using a fleet of low-cost cargo bikes and 
+				<i class="fa fa-bicycle fa-4x"></i>
+				<p><b>Materials Sourcing</b></p>
+				<p class="text-main-grey">Wecyclers offers a household recycling service using a fleet of low-cost cargo bikes and 
 				an SMS-based incentives platform.</p>
 			</div>
 			<div class="tile">
 				<i class="fa fa-home fa-4x"></i> 
 				<p><b>Household Involvement</b></p>
-				<p> For every kilogram of material recycled with us, families receive redeemable 
+				<p class="text-main-grey"> For every kilogram of material recycled with us, families receive redeemable 
 				Wecyclers points over their mobile phones in return.</p>
 			</div>
 		</div>
@@ -72,13 +64,13 @@
 			<div class="tile">
 				<i class="fa fa-usd fa-4x"></i>
 				<p><b>Wecyclers Incentives</b></p>
-				<p> Families can then redeem their points for 
+				<p class="text-main-grey"> Families can then redeem their points for 
 				goods such as electronics and household goods.</p>
 			</div>
 			<div class="tile">
 				<i class="fa fa-recycle fa-4x"></i>
 				<p><b>Recycling Feedstock</b></p>
-				Wecyclers supplies well-sorted, high quality recyclable material to local 
+				<p class="text-tile-grey"> Wecyclers supplies well-sorted, high quality recyclable material to local 
 				recycling processors.</p>
 			</div>
 		</div>
@@ -87,7 +79,6 @@
 	<div class='movie'>
 		<main>
 			<img src="/images/wecyclers_banner.jpg" alt=""> 
-			<!-- = url("../images/wecyclers_banner.jpg") -->
 		</main>
 		<aside>
 			<img src="/images/MIT-Wecyclers-01.jpg" alt=""> 
@@ -99,12 +90,12 @@
 				<div class="tile">
 					<i class="fa fa-globe fa-4x"></i>
 					<p><b>Our Mission</b></p>
-					<p>Our misison is to increase public health, create jobs and show the world a new way to Recycle!</p>
+					<p class="text-main-grey">Our misison is to increase public health, create jobs and show the world a new way to Recycle!</p>
 				</div>
 				<div class="tile">
 					<i class="fa fa-area-chart fa-4x"></i>
 					<p><b>Our Acomplishments</b></p>
-					<p>Wecyclers has registered over 3,500 house, built 15 collection cargo bikes, 
+					<p class="text-main-grey">Wecyclers has registered over 3,500 house, built 15 collection cargo bikes, 
 					created over 20 jobs and collected over 126 metric tons of recyclables. </p>
 				</div>
 			</div>
@@ -112,14 +103,13 @@
 				<div class="tile">
 					<i class="fa fa-smile-o fa-4x"></i>
 					<p><b>Our Bright Future</b></p>
-					<p>We expect to grow our subscriber base to 1M over the next 5 years, collecting over 730,000 tons 
+					<p class="text-main-grey">We expect to grow our subscriber base to 1M over the next 5 years, collecting over 730,000 tons 
 					of waste.</p>
 				</div>
 				<div class="tile">
-					<i class="fa fa-rebel fa-4x"></i>
-					<p><b>Our Growth Strategy</b></p>
-					<p>We expect to franchisw wecycles to micro entrepreneurs 
-					providing them with a dignified and safe source of livelihood.</p>
+					<i class="fa fa-phone-square fa-4x"></i>
+					<p><b>Contact Us</b></p>
+					<p class="text-main-grey">Want to learn more about our program? <br> Call us: 317-690-6666 <br> Email: info@wecyclers.com </p>
 				</div>
 			</div>
 		</div>
@@ -128,7 +118,7 @@
 	</div>
 	<div class='footer-container'>
 		<footer class='page_bottom'>
-			<img src="../images/wecyclers-logo.png">
+			<img src="../images/logo2.png">
 		</footer>
 	</div>
 </body>

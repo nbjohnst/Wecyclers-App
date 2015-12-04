@@ -357,11 +357,48 @@ th {
   padding: 0; }
 
 div.hero {
-  height: 620px;
+  height: 335px;
   position: relative;
   margin: 0 auto;
   width: 100%;
+  background: linear-gradient(red, blue), url("../images/plastic-bottles-4.JPG") no-repeat;
   background: radial-gradient(rgba(78, 0, 121, 0.39), rgba(84, 17, 123, 0.38)), url("../images/plastic-bottles-4.JPG") no-repeat; }
+
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: black; }
+
+.banner-slogan {
+  margin: 0 auto;
+  transform: translateY(168px);
+  text-align: center; }
+
+.banner-slogan span {
+  color: white;
+  font-size: 35px; }
+
+nav.media_nav {
+  border-bottom: green solid 2px; }
+
+.agent-sign-in.disappear {
+  border-right: grey 2px solid; }
+
+.tile {
+  border-top: green solid; }
+
+.button.landing-client {
+  width: 118px; }
+
+.button-parent1 {
+  display: inline-block;
+  margin-left: -18px; }
+
+.button-parent2 {
+  position: absolute;
+  transform: translateY(14px);
+  transform: translateX(-662px);
+  margin-top: 6px; }
 
 .agent-sign-in {
   position: fixed;
@@ -392,21 +429,37 @@ div.hero {
 .agent-form .agent-sign-in {
   margin-top: 7px; }
 
+.button {
+  text-decoration: none;
+  color: black;
+  border: 2px black solid;
+  padding: 1px;
+  padding-right: 7px;
+  padding-left: 5px;
+  border-radius: 17px;
+  background-color: lavender; }
+
+input[type="text"] {
+  background-color: LAVENDER; }
+
+.agent-button {
+  margin-left: 5px; }
+
 nav.media_nav {
   height: 31px;
   background-color: white;
   position: absolute;
-  margin-top: 30px;
   right: 0px;
   left: 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 26px; }
+  padding-left: 26px;
+  margin-top: 5px; }
 
 nav.media_nav img {
-  margin-right: 25px;
-  height: 29px; }
+  height: 29px;
+  padding-top: 2px; }
 
 .tile-container {
   background-color: #F2F2F2; }
@@ -417,6 +470,9 @@ nav.media_nav img {
   margin: 1px;
   text-align: center;
   padding: 10px; }
+
+.tile i {
+  color: rgba(97, 4, 128, 0.67); }
 
 .our-mission {
   background-color: #F2F2F2; }
@@ -452,10 +508,8 @@ nav.media_nav img {
     width: 100%; } }
 
 .image-banner {
-  background-color: white;
-  height: 80px;
-  border-bottom: solid black 40px;
-  border-top: solid black 50px; }
+  background-color: #212121;
+  height: 17px; }
 
 .movie {
   margin: 0-auto;
@@ -492,9 +546,9 @@ footer.page_bottom {
   margin-right: 20px; }
 
 footer.page_bottom img {
-  margin-top: 42px;
-  height: 29px;
-  margin-left: 14px; }
+  margin-top: 19px;
+  height: 51px;
+  margin-left: 24px; }
 
 .footer-container {
   background-color: white;
@@ -505,37 +559,29 @@ body {
   margin: 0 auto; }
 
 .dashboard-hero {
-  background-color: blue;
-  margin: 0 auto; }
+  margin: 0 auto;
+  background: radial-gradient(rgba(78, 0, 121, 0.39), rgba(84, 17, 123, 0.38)), url("../images/plastic-bottles-4.JPG") no-repeat; }
 
 .card_container {
-  background-color: yellow;
-  /*height: 100px;*/
   width: 100%;
   margin: 0 auto;
-  height: 100%; }
+  height: 100%;
+  background: radial-gradient(rgba(78, 0, 121, 0.39), rgba(84, 17, 123, 0.38)), url("../images/plastic-bottles-4.JPG") no-repeat; }
 
 .hidden_container-form {
   background-color: red;
-  /*height: 600px;*/
-  width: 260px;
+  width: 65%;
   margin: 0 auto;
+  display: flex;
   flex-wrap: wrap;
   flex-direction: column; }
 
 .hidden_container {
   background-color: red;
-  /*height: 600px;*/
-  width: 260px;
+  width: 65%;
   margin: 0 auto;
   flex-wrap: wrap;
   flex-direction: column; }
-
-.card {
-  background-color: magenta;
-  border: 1px black solid;
-  flex: 1;
-  text-align: center; }
 
 .new_user {
   background-color: red;
@@ -545,66 +591,36 @@ body {
 
 .media_container {
   display: flex;
-  background-color: grey;
-  height: 100px; }
+  background-color: #F4F4F4;
+  height: 150px; }
 
 .dashboard-form-container {
   display: flex;
-  background-color: grey;
-  height: 100px; }
+  flex-direction: column;
+  background-color: #F4F4F4;
+  height: 220px; }
 
 .personal_info {
-  flex: 1;
-  background-color: green;
-  margin: 2px;
-  text-align: center;
-  padding: 7px; }
+  border-top: 1px solid green; }
 
 .personal_numbers {
-  flex: 1;
-  background-color: teal;
-  margin: 2px;
-  text-align: center;
-  padding: 7px; }
+  border-top: #989191 solid 1px; }
 
+nav.dashboard_nav {
+  border-bottom: grey 2px solid; }
+
+.personal_info,
+.personal_info-input,
+.personal_numbers,
 .personal_numbers-input {
   flex: 1;
-  background-color: teal;
+  background-color: white;
   margin: 2px;
   text-align: center;
   padding: 7px; }
 
-.customer_info {
-  flex: 1;
-  background-color: green;
-  margin: 2px;
-  margin-left: 2px;
-  padding: 7px; }
-
-.selectSendInputParent {
-  display: flex; }
-
-.clentSelectContainer {
-  flex: 1; }
-
-.clientSubmitContainer {
-  flex: 1; }
-
-.customer_info div {
-  margin-left: -6px; }
-
-.customer_first_donation {
-  flex: 1;
-  background-color: teal;
-  margin: 2px;
-  margin-left: 2px;
-  padding: 7px; }
-
-.customer_first_donation div {
-  margin-left: -6px; }
-
-.dashboard_nav {
-  margin-top: 0px; }
+.personal_info span {
+  color: #6D6C6C; }
 
 nav.dashboard_nav {
   height: 31px;
@@ -617,22 +633,109 @@ nav.dashboard_nav {
   align-items: center;
   padding-left: 26px; }
 
-@media screen and (min-width: 700px) {
+nav.dashboard_nav img {
+  border: 0;
+  height: 33px;
+  margin-right: 20px;
+  margin-bottom: 25px; }
+
+button.landing-sign-in {
+  color: #3A3939; }
+
+button.landing-dashboard {
+  margin-bottom: 30px;
+  color: #3A3939; }
+
+.dash-input {
+  margin: 1px; }
+
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+  background-color: #F4F4F4;
+  background-image: none;
+  color: black; }
+
+@media screen and (min-width: 900px) {
   .card_container {
-    width: 70%; }
+    width: 70%;
+    margin: 0 auto;
+    height: 100%;
+    background: none;
+    background-color: #F4F4F4; }
   .hidden_container {
     background-color: red;
     /*height: 100px;*/
-    width: 65%;
-    margin: 0 auto;
-    flex-wrap: wrap; }
-  .card {
-    width: 180px;
-    flex: 50;
-    display: inline-block; }
-  .customer_info,
-  .customer_first_donation {
-    text-align: center; }
-  .customer_first_donation div,
-  .customer_info div {
-    margin-left: 0px; } }
+    margin: 0 auto; }
+  .media_container {
+    height: 100px; }
+  .dashboard-form-container {
+    display: flex;
+    flex-direction: row;
+    background-color: #F4F4F4;
+    height: 150px; } }
+
+footer.page_bottom {
+  border-left: 3px solid #D2D2D2;
+  border-right: 3px solid #D2D2D2; }
+
+.card-container-container {
+  width: 75%;
+  background-color: #F4F4F4;
+  margin: 0 auto; }
+
+.hidden_container2 {
+  background-color: white;
+  width: 65%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 730px;
+  text-align: center; }
+
+.hidden-container-top {
+  background-color: white;
+  padding: 20px;
+  font-size: 20px;
+  padding-top: 0; }
+
+form.client-Information-Form {
+  margin: 10px; }
+
+.clinet-form-input {
+  text-decoration: none;
+  color: black;
+  border: 1px black solid;
+  padding: 1px;
+  padding-right: 7px;
+  padding-left: 5px;
+  background-color: white; }
+
+input.clientIdInput {
+  width: 100px;
+  margin-left: -7px;
+  padding-left: 20px; }
+
+input.clinet-form-input {
+  margin-top: 10px; }
+
+.two-tiles {
+  background-color: red;
+  display: flex;
+  flex-direction: column; }
+
+.two-tiles-child {
+  background-color: white;
+  flex: 1;
+  text-align: center;
+  padding-top: 30px; }
+
+.two-tiles-fa {
+  background: rgba(78, 0, 121, 0.39);
+  padding: 5px;
+  color: cornsilk; }
+
+.clientInfoTile {
+  font-size: 20px; }
+
+@media screen and (min-width: 800px) {
+  .two-tiles {
+    flex-direction: row; } }

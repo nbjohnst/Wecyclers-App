@@ -2,7 +2,6 @@
 .tile-container {
 	// height: 250px;
 	background-color: #F2F2F2;
-
 }
 
 .tile {
@@ -14,7 +13,19 @@
 	padding: 10px;
 }
 
-.our-mission{
+.tile i {
+	color: rgba(97, 4, 128, 0.67);
+}
+
+.text-tile-grey {
+	// color: #B5B5B5;
+}
+
+.text-main-grey{
+	// color: #949494;
+}
+
+.our-mission {
 	background-color: #F2F2F2;
 }
 
@@ -66,12 +77,9 @@
 	}
 }
 
-
 .image-banner {
-	background-color: white;
-	height: 80px;
-	border-bottom: solid black 40px;
-	border-top: solid black 50px;
+	background-color: #212121;
+    height: 17px;
 }
 
 .movie {
@@ -149,3 +157,4 @@
     min-width:100%;
     min-height:100%
 }
+

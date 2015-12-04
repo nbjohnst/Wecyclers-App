@@ -1,15 +1,58 @@
 div.hero {
-	height: 620px;
+	height: 335px;
 	position: relative;
 	margin: 0 auto;
 	width: 100%;
-	// background-image: radial-gradient(rgba(0, 142, 172, 0.0), rgba(0, 142) url('wecyclers-tricycle.jpg') center no-repeat; 
-	// background-size: cover;
-    // background-image: url('../images/wecyclers-tricycle.jpg');
-   // background: radial-gradient(rgba(78, 0, 121, 0.5), rgba(78, 0, 121, 0.9)),
-   // url("../images/plastic-bottles-4.JPG") no-repeat;
-   background: radial-gradient(rgba(78, 0, 121, 0.39), rgba(84, 17, 123, 0.38)), 
-   url("../images/plastic-bottles-4.JPG") no-repeat;
+	background: linear-gradient(red, blue), url("../images/plastic-bottles-4.JPG") no-repeat;
+   	background: radial-gradient(rgba(78, 0, 121, 0.39), rgba(84, 17, 123, 0.38)), 
+  	url("../images/plastic-bottles-4.JPG") no-repeat;
+}
+
+a {
+    background-color: transparent;
+    text-decoration: none;
+    color: black;
+}
+
+.banner-slogan {
+	margin: 0 auto;
+	transform: translateY(168px);
+	text-align: center;
+}
+
+.banner-slogan span {
+	color: white;
+	font-size: 35px;
+}
+
+ 
+nav.media_nav {
+    border-bottom: green solid 2px;
+
+}
+
+.agent-sign-in.disappear {
+    border-right: grey 2px solid;
+}
+
+.tile {
+    border-top: green solid;
+}
+
+.button.landing-client {
+    width: 118px;
+}
+
+.button-parent1{
+	display: inline-block;
+	margin-left: -18px;
+}
+
+.button-parent2 {
+    position: absolute;
+    transform: translateY(14px);
+    transform: translateX(-662px);
+    margin-top: 6px;
 }
 
 .agent-sign-in {
@@ -30,8 +73,6 @@ div.hero {
 .agent-form {
 	width: 260px;
 	margin-left: 20px
-	// margin-left: 25px;
-	// transform: translateY(125px);
 }
 
 .login-inputs, .login-submit {
@@ -51,35 +92,41 @@ div.hero {
 
 }
 
+.button {
+	text-decoration: none;
+	color: black;
+	border: 2px black solid;
+	padding: 1px;
+	padding-right: 7px;
+	padding-left: 5px;
+	border-radius: 17px;
+    background-color: lavender;
+
+}
+
+input[type="text"] {
+    background-color: LAVENDER;
+}
+
+.agent-button{
+	margin-left: 5px;
+}
+
 nav.media_nav {
 	height: 31px;
 	background-color: white;
 	position: absolute;
-	margin-top: 30px;
 	right: 0px;
 	left: 0px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding-left: 26px;
+	margin-top: 5px;
 }
-
 
 nav.media_nav img {
-	margin-right: 25px;
 	height: 29px;
+	padding-top: 2px;
 }
 
-// @keyframes stretch {
-//   .agent-login {
-//   animation-name: stretch;
-//   animation-duration: 1.5s; 
-//   animation-timing-function: ease-out; 
-//   animation-delay: 0;
-//   animation-direction: alternate;
-//   animation-iteration-count: infinite;
-//   animation-fill-mode: none;
-//   animation-play-state: running; 
-// }
-
-// }

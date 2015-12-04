@@ -3,54 +3,40 @@ body {
 }
 
 .dashboard-hero {
-	background-color: blue;
+	// background-color: #F4F4F4;
 	margin: 0 auto;
-	// position: relative;
-	
+	// color: #B5B5B5;
+	background: radial-gradient(rgba(78, 0, 121, 0.39), 
+	rgba(84, 17, 123, 0.38)), 
+	url("../images/plastic-bottles-4.JPG") no-repeat;
+
 }
 
 .card_container {
-	background-color: yellow;
-	/*height: 100px;*/
 	width: 100%;
 	margin: 0 auto;
 	height: 100%;  
+	background: radial-gradient(rgba(78, 0, 121, 0.39), 
+	rgba(84, 17, 123, 0.38)), 
+	url("../images/plastic-bottles-4.JPG") no-repeat;
 }
 
 .hidden_container-form {
 	background-color: red;
-	/*height: 600px;*/
-	width: 260px;
+	width: 65%;
 	margin: 0 auto;
-	// display: flex;
+	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
-	// position: absolute;
- //  	top: 50%;
- //  	height: 100px;
- //  	margin-top: -50px; 
-  	// transform: translateY(80px);
-}
-.hidden_container {
-	background-color: red;
-	/*height: 600px;*/
-	width: 260px;
-	margin: 0 auto;
-	// display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;
-	// position: absolute;
- //  	top: 50%;
- //  	height: 100px;
- //  	margin-top: -50px; 
-  	// transform: translateY(80px);
 }
 
-.card {
-	background-color: magenta;
-	border: 1px black solid;
-	flex:1;
-	text-align: center;
+
+.hidden_container {
+	background-color: red;
+	width: 65%;
+	margin: 0 auto;
+	flex-wrap: wrap;
+	flex-direction: column;
 }
 
 .new_user {
@@ -63,95 +49,47 @@ body {
 
 .media_container {
 	display: flex;
-	background-color: grey;
-	height: 100px;
+	background-color: #F4F4F4;
+	height: 150px;
 }	
-
+// dashboard-form-container
 .dashboard-form-container {
 	display: flex;
-	background-color: grey;
-	height: 100px;
+	flex-direction: column;
+	background-color: #F4F4F4;
+	height: 220px;
 }	
 
 .personal_info {
-	flex: 1;
-	background-color: green;
-	margin: 2px;
-	text-align: center;
-	padding: 7px;
+    border-top: 1px solid green;
 }
 
 .personal_numbers {
-	flex: 1;
-	background-color: teal;
-	margin: 2px;
-	text-align: center;
-	padding: 7px;
+    border-top: #989191 solid 1px;
 }
 
+nav.dashboard_nav {
+    border-bottom: grey 2px solid;
+}
+
+.personal_info,
+.personal_info-input,
+.personal_numbers,
 .personal_numbers-input {
 	flex: 1;
-	background-color: teal;
+	background-color: white;
 	margin: 2px;
 	text-align: center;
 	padding: 7px;
 }
 
-.customer_info {
-	flex: 1;
-	background-color: green;
-	margin: 2px;
-	margin-left: 2px;
-	padding: 7px;
+.personal_info span {
+	color: #6D6C6C;
 }
-.selectSendInputParent {
-	display: flex;
-}
-
-.clentSelectContainer {
-	flex:1;
-}
-
-.clientSubmitContainer {
-	flex:1;
-}
-
-.customer_info div {
-
-	margin-left: -6px;
-	
-}
-
-.customer_first_donation {
-	flex: 1;
-	background-color: teal;
-	margin: 2px;
-	margin-left: 2px;
-	padding: 7px;
-}
-
-.customer_first_donation div {
-	margin-left: -6px;
-}
-
-.dashboard_nav {
-	margin-top: 0px;
-}
-
-// .dashboard-fake-lightbox {
-// 	height: 400px;
-// 	width: 400px;
-// 	background-color: red;
-// 	transform: translateY(-500px);
-// 	margin; 0 auto;
-// 	display: inline-block;
-
-// }
 
 nav.dashboard_nav {
 	height: 31px;
 	background-color: white;
-	// position: absolute;
 	margin-top: 30px;
 	right: 0px;
 	left: 0px;
@@ -161,33 +99,80 @@ nav.dashboard_nav {
 	padding-left: 26px;
 }
 
-@media screen and (min-width: 700px) {
+nav.dashboard_nav img {
+    border: 0;
+    height: 33px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+}
+
+button.landing-sign-in {
+    color: #3A3939;
+}
+
+button.landing-dashboard {
+    margin-bottom: 30px;
+    color: #3A3939;
+}
+
+.dash-input {
+	margin: 1px;
+}
+
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+    background-color: #F4F4F4;
+    background-image: none;
+    color: rgb(0, 0, 0);
+}
+
+// @media screen and (min-width: 500px) {
+// 	.hidden_container-form {
+// 		flex-direction: none; 
+// 	}
+// 	.media_container {
+// 		height: 100px;
+// 	}	
+// 	.card_container {
+	
+// 	width: 100%;
+// 	margin: 0 auto;
+// 	height: 100%;  
+// 	background: none;
+// 	background-color: #F4F4F4;
+// }
+
+// }
+
+@media screen and (min-width: 900px) {
+	
 	.card_container {
-		width: 70%;
+	
+	width: 70%;
+	margin: 0 auto;
+	height: 100%;  
+	background: none;
+	background-color: #F4F4F4;
 	}
 	.hidden_container {
 		background-color: red;
 		/*height: 100px;*/
-		width: 65%;
 		margin: 0 auto;
-		flex-wrap: wrap;
+		// flex-wrap: wrap;
 	}
-	.card {
-		width: 180px;
-		flex:50;
-		display: inline-block;
-	}
-	
-	.customer_info,
-	.customer_first_donation {
-	    text-align: center;
+	.media_container {
+		height: 100px;
 	}
 
-	.customer_first_donation div, 
-	.customer_info div  {
-	
-		margin-left: 0px;
-	
-	}
+	.dashboard-form-container {
+	display: flex;
+	flex-direction: row;
+	background-color: #F4F4F4;
+	height: 150px;
+	}	
 
+}
+
+footer.page_bottom {
+    border-left: 3px solid #D2D2D2;
+    border-right: 3px solid #D2D2D2;
 }

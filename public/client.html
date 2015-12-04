@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/styles.css">
+	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+	<script src="../scripts/client2.js"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js'></script>
+	<link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.css">
+</head>
+<body>
+	<div class='dashboard_nav_parent'>
+		<nav class='dashboard_nav'>
+
+			<a href="http://0.0.0.0:3000" class="button">
+					<i class="fa fa-home">Back </i> 
+			</a>
+			<img src="../images/logo2.png">
+		</nav> 
+	</div>
+	<div class='dashboard-hero'>
+		<div class='card-container-container'>
+			<div class='card_container2'>
+		
+				<div class='hidden_container2'>
+					<div class="hidden-container-top">
+						<span><b>Hello!<br>Please enter your client ID.<span/>
+						<form class="client-Information-Form">
+							<input placeholder="Client ID #" type="text" class='clientIdInput'>
+							<button type="submit" value="Submit" class='clinet-form-input'>
+               					 <i class="fa fa-paper-plane"></i> Next
+          					</button>
+						</form>
+							<div></div>
+							<div></div>
+					</div>
+					
+					<div class="two-tiles">
+						
+						
+					</div>
+				</div>
+			</div>
+		</div>	
+
+	</div>
+	<div class="footer-container">
+		<footer class='page_bottom'>
+			<img src="../images/logo2.png">
+		</footer>
+	</div>
+	<script id="clientInformationTemplate" type="text/x-handlebars-template">
+		<div class="two-tiles-child">
+			<div class="two-tiles-fa"><i class="fa fa-recycle fa-3x"></i></div>
+			<div class="clientInfoTile">
+				Aluminum Donated: {{aluminumPickupKg}}kg <br>
+				Plastic Donated: {{plasticPickupKg}}kg
+			</div>
+		</div>
+		<div class="two-tiles-child">
+			<div class="two-tiles-fa"><i class="fa fa-usd fa-3x"></i></div>
+			<div class="clientInfoTile">
+				Credits Earned: ${{creditsAwarded}}!
+			</div>
+		</div>
+		<div class="two-tiles-child">
+			<div class="two-tiles-fa"><i class="fa fa-smile-o fa-3x"></i></div>
+			<div class="clientInfoTile">
+				Stop by our depot to redeem your credits for a nice prize!
+			</div>
+		</div>
+		<div class="two-tiles-child">
+			<div class="two-tiles-fa"><i class="fa fa-users fa-3x"></i></div>
+			<div class="clientInfoTile">
+				Thank you for doing your part to keep our streets clean!
+		</div>
+		<div class="two-tiles-child">
+			<div class="two-tiles-fa"><i class="fa fa-thumbs-o-up fa-3x"></i></div>
+			<div class="clientInfoTile">
+				Want to Join our team? <br>
+				Give us a call at (317)690-6666 <br>
+				Or send us an email at info@wecyclers.com
+		</div>
+	</script>
+</body>
+</html>
